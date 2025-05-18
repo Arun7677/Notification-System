@@ -1,0 +1,123 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.create-notification-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    padding: 20px;
+}
+
+.notification-header {
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    padding: 16px;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+}
+
+.notification-body {
+    padding: 16px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+.input-with-button {
+    display: flex;
+}
+
+.input-with-button input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 1em;
+}
+
+.search-button {
+    background-color: #e4e6eb;
+    color: #1c1e21;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.search-button:hover {
+    background-color: #d8dadf;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+    color: #333;
+    font-weight: 400;
+}
+
+.radio-group input[type="radio"],
+.checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.send-button {
+    background-color: #1877f2;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.send-button:hover {
+    background-color: #166fe2;
+}

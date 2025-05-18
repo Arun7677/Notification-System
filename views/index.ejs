@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="form-title">Sign Up</h1>
+        <form action="/create" method="POST" id="registration-form">
+            <div class="input-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="phone">Phone number (optional)</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="input-group">
+                <label>Notification preferences</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="email-notifications" name="notifications" value="email">
+                    <span class="custom-checkbox"></span>
+                    <label for="email-notifications">Receive email notifications</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="sms-notifications" name="notifications" value="sms">
+                    <span class="custom-checkbox"></span>
+                    <label for="sms-notifications">Receive SMS notifications</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="in-app-notifications" name="notifications" value="in-app">
+                    <span class="custom-checkbox"></span>
+                    <label for="in-app-notifications">Receive in-app notifications</label>
+                </div>
+            </div>
+            <button type="submit" id="sign-up">Sign Up</button>
+            <div class="login-link"> <a href="/login">Log in</a> </div> 
+        </form>
+    </div>
+</body>
+</html>

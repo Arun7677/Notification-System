@@ -1,0 +1,154 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #262626;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    color: #8e8e8e;
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #0095f6;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 8px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+}
+
+.checkbox-group label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    color: #262626;
+    cursor: pointer;
+}
+
+.checkbox-group .custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #fff;
+    margin-right: 8px;
+    vertical-align: middle;
+    cursor: pointer; /* Add cursor pointer to custom checkbox */
+}
+
+.checkbox-group .custom-checkbox:hover {
+    background-color: #f5f5f5;
+}
+
+.checkbox-group input[type="checkbox"]:checked + .custom-checkbox {
+    background-color: #0095f6;
+    border-color: #0095f6;
+}
+
+.checkbox-group input[type="checkbox"]:checked + .custom-checkbox::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+#sign-up {
+    width: 100%;
+    padding: 10px;
+    background-color: #0095f6;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#sign-up:hover {
+    background-color: #0077cc;
+}
+
+.optional-text {
+    text-align: center;
+    font-size: 12px;
+    color: #8e8e8e;
+    margin-top: 10px;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #0095f6;
+}
+
+.login-link a {
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

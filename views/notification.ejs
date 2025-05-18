@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Notification</title>
+    <link rel="stylesheet" href="/notification.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="create-notification-container">
+        <div class="notification-header">CREATE NOTIFICATION</div>
+        <div class="notification-body">
+            <form action="/notification" method="POST">
+                <div class="form-group">
+                    <label for="email">email:</label>
+                    <div class="input-with-button">
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Category:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="category" value="system" checked> System</label>
+                        <label><input type="radio" name="category" value="activity"> Activity</label>
+                        <label><input type="radio" name="category" value="informational"> Informational</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="type">Type:</label>
+                    <select id="type" name="type">
+                        <option>Account Verification</option>
+                        <option>New Message</option>
+                        <option>Order Update</option>
+                        <option>Event Reminder</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Delivery Channels:</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="delivery" value="email" checked> Email</label>
+                        <label><input type="checkbox" name="delivery" value="sms" checked> SMS</label>
+                        <label><input type="checkbox" name="delivery" value="in-app" checked> In-app</label>
+                    </div>
+                </div>
+                <button class="send-button">SEND NOTIFICATION</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
